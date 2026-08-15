@@ -31,7 +31,7 @@ This project uses the **AACT (Aggregate Analysis of ClinicalTrials.gov)** databa
 - **Germany, France, Canada, the UK, and Italy** form a consistent second tier, tracking closely with one another over the past 15 years.  
 - The apparent decline in trial counts after 2024, roughly, is most likely not a real drop in research activity. Recent trials may not yet be fully registered or may have future/anticipated start dates, noted in the chart below.
 
-![Cardiovascular trial trends by top 10 countries](outputs/Rplot.png)
+![Cardiovascular trial trends by top 10 countries](Rplot.png)
 
 ## What I'd Explore Next 
 
