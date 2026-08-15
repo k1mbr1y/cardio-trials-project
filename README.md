@@ -35,7 +35,8 @@ This project uses the **AACT (Aggregate Analysis of ClinicalTrials.gov)** databa
 
 ## What I'd Explore Next 
 
-- ## Breaking down trial counts by sponsor type (industry, academic, government) and other variables, such as trial phase, to better understand the characteristics of research activity across regions.
+- Breaking down trial counts by sponsor type (industry, academic, government) and other variables, such as trial phase, to better understand the characteristics of research activity across regions.
+-  Look further into US state-level trial distribution to understand domestic access patterns.
 
 ## What I Learned
 
@@ -44,11 +45,9 @@ I believed that when I started this, I would be most surprised with the computat
 ## Project Structure
 
 cardio-trials-project/
-
-├── data/           \# exported CSV from SQL queries
-
-├── scripts/        \# R scripts
-
-├── outputs/         \# saved charts/plots
+├── README.md
+├── script.R              # R analysis script
+├── cardio_trials_by_country_year.csv   # exported data from SQL query
+└── Rplot.png             # final chart output
 
 └── README.md  
