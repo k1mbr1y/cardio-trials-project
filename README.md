@@ -33,6 +33,12 @@ This project uses the **AACT (Aggregate Analysis of ClinicalTrials.gov)** databa
 
 ![Cardiovascular trial trends by top 10 countries](Rplot.png)
 
+## Dashboard Addition
+
+As well, I built this analysis as an interactive Power BI dashboard alongside my R plot visualization, connecting directly to the AACT database and rebuilding the filtering and aggregation logic using Power Query and DAX.
+
+![Power BI Dashboard](dashboard.png)
+
 ## What I'd Explore Next 
 
 - Breaking down trial counts by sponsor type (industry, academic, government) and other variables, such as trial phase, to better understand the characteristics of research activity across regions.
