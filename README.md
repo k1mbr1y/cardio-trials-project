@@ -1,6 +1,6 @@
 # Cardiovascular Clinical Trial Geography: Where Is Heart Disease Research Actually Happening?
 
-A SQL \+ R analysis of global cardiovascular clinical trial activity, using real data from ClinicalTrials.gov, exploring how research activity is geographically spread and how that distribution has changed over the past four decades.
+A SQL \+ R + Power BI analysis of global cardiovascular clinical trial activity, using real data from ClinicalTrials.gov, exploring how research activity is geographically spread and how that distribution has changed over the past four decades.
 
 ## The Question
 
@@ -15,6 +15,8 @@ This project uses the **AACT (Aggregate Analysis of ClinicalTrials.gov)** databa
 - **SQL (PostgreSQL)** \-\> querying and joining the AACT database directly via pgAdmin  
 - **R** \-\> `dplyr` for data wrangling, `ggplot2` for visualization  
 - **RStudio** \-\> project organization and analysis
+- **Microsoft Power BI** \-\> dashboard and further visualization
+
 
 ## Methodology
 
@@ -22,7 +24,7 @@ This project uses the **AACT (Aggregate Analysis of ClinicalTrials.gov)** databa
 2. **Joining trial geography and timing**: I joined the filtered condition list to the `facilities` table (trial site locations) and the `studies` table (trial start dates) on each trial's unique `nct_id`.  
 3. **Aggregating**: Using `COUNT(DISTINCT nct_id)` and grouping by country and year (to avoid double-counting trials with multiple sites or multiple listed conditions), I built a country-by-year trial count dataset.  
 4. **Cleaning**: I excluded trials with missing start dates and excluded implausible future years (post-2026) that reflect registration artifacts rather than real activity.  
-5. **Visualizing**: In R, I found the top 10 countries by total trial volume and plotted their year-by-year trial counts.
+5. **Visualizing**: In R, I found the top 10 countries by total trial volume and plotted their year-by-year trial counts. In addition, I created the same trend chart in Power BI, making it interactive and adding a geographic map and summary KPIs. 
 
 ## Key Findings
 
@@ -35,7 +37,7 @@ This project uses the **AACT (Aggregate Analysis of ClinicalTrials.gov)** databa
 
 ## Dashboard Addition
 
-As well, I built this analysis as an interactive Power BI dashboard alongside my R plot visualization, connecting directly to the AACT database and rebuilding the filtering and aggregation logic using Power Query and DAX. This includes a geographic map and summary KPIs alongside the trend chart.
+As well, I built this analysis as an interactive Power BI dashboard alongside my R plot visualization, connecting directly to the AACT database and rebuilding the filtering and aggregation logic using Power Query and DAX. This includes a geographic map and summary KPIs, along with the trend chart.
 
 ![Power BI Dashboard](dashboard.png)
 
@@ -46,7 +48,7 @@ As well, I built this analysis as an interactive Power BI dashboard alongside my
 
 ## What I Learned
 
-I believed that when I started this, I would be most surprised with the computational and technical side of working with the programs since I am a beginner, but, truly, the most surprising thing of all for this project was the sheer size of the actual healthcare data and dealing with it\! It is the reality of the clinical world today, but having to take information from it and present findings was both informative and a great introduction to dealing with clinical data in the real world. It felt very good to work with this data and draw conclusions from it, given how vital the information can be and how it is only the beginning of what I intend to explore in the medical data world.
+I believed that when I started this, I would be most surprised with the computational and technical side of working with the programs since I am a beginner, but, truly, the most surprising thing of all for this project was the sheer size of the actual healthcare data and dealing with it\! It is the reality of the clinical world today, but having to take information from it and present findings was both informative and a great introduction to dealing with clinical data in the real world. It felt very good to work with this data and draw conclusions from it, given how vital the information can be and that it is only the beginning of what I intend to explore in the world of medical data. Overall, I learned a great deal about creating useful SQL queries, curating graphs in R, and also starting to broaden my skills with Power BI. This project helped my skills improve in the applications I used over time and revisions.
 
 ## Project Structure
 
