@@ -35,7 +35,7 @@ This project uses the **AACT (Aggregate Analysis of ClinicalTrials.gov)** databa
 
 ## Dashboard Addition
 
-As well, I built this analysis as an interactive Power BI dashboard alongside my R plot visualization, connecting directly to the AACT database and rebuilding the filtering and aggregation logic using Power Query and DAX.
+As well, I built this analysis as an interactive Power BI dashboard alongside my R plot visualization, connecting directly to the AACT database and rebuilding the filtering and aggregation logic using Power Query and DAX. This includes a geographic map and summary KPIs alongside the trend chart.
 
 ![Power BI Dashboard](dashboard.png)
 
@@ -55,5 +55,5 @@ cardio-trials-project/
 ├── script.R              # R analysis script
 ├── cardio_trials_by_country_year.csv   # exported data from SQL query
 └── Rplot.png             # final chart output
-
+└── dashboard.png         # power Bi dashboard
 └── README.md  
